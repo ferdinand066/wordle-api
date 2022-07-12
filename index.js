@@ -4002,6 +4002,7 @@ app.get('/word-list', (req, res) => {
     ]);
 })
 
-app.listen(5000, function(){
-    console.log('Server started on port 5000')
+const PORT = 5000;
+app.listen(process.env.PORT || PORT, function(){
+    console.log('Server started on port 3000')
 })
